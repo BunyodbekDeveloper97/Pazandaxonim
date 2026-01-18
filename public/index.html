@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>Pazandaxonim | Premium</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-overlay"></div>
+    
+    <div class="app-wrapper">
+        <header>
+            <h1>Pazandaxonim</h1>
+            <p>Bugun nima pishiramiz?</p>
+        </header>
+
+        <main class="wheel-section">
+            <div class="canvas-container">
+                <div class="pointer"></div>
+                <canvas id="wheelCanvas" width="500" height="500"></canvas>
+            </div>
+        </main>
+
+        <div class="action-section">
+            <div id="resultBox"><span id="resultText"></span></div>
+            <button id="spinBtn">Omadni sinash!</button>
+        </div>
+
+        <div class="history-section">
+            <h3>Tanlangan taomlar tarixi</h3>
+            <div class="table-wrapper">
+                <table id="historyTable">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Taom</th>
+                            <th>Vaqt</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+            <button id="clearBtn">Tarixni tozalash</button>
+        </div>
+
+        <footer>
+                 &copy; 2026 RB.Group.Co . All Right Reserved
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
